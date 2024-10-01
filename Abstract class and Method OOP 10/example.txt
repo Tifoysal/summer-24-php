@@ -1,0 +1,17 @@
+<?php 
+
+abstract class Practice{
+    public $name;
+    abstract protected function calc($a,$b);
+};
+
+
+class child extends Practice{
+    public function calc($a,$b){
+        echo $a+$b;
+    }
+
+};
+
+$test=new child();
+$test->calc(10,20);
